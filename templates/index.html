@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+	<head>
+		<title>Mask Detection System</title>
+		<link href="{{ url_for('static', filename= 'css/style.css') }}" rel="stylesheet"> 
+	</head>
+	<body>
+	
+		<div class="container">
+					
+			<form method="post" action="{{ url_for('tasks') }}">
+				<input type="submit" value="Capture & Detect" name="start" onclick="display()" id="butt" />
+			</form>
+
+			<img src="{{ url_for('video_feed') }}" height="80%" id = "screen" style="display: none;" >
+
+			
+			<p id="result"> {{result}} </p>
+			
+		</div>
+
+		<script>
+			function display(){
+				document.getElementById("screen").style.display = "block";
+				document.getElementById("result").style.display = "none";
+				document.getElementById("butt").style.display = "none";
+			}
+		</script>
+
+	</body>
+</html>

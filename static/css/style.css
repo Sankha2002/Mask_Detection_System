@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('../images/mask.gif');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    min-height: 94vh; 
+    padding: 22px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+  }
+  
+  form {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  input[type="submit"] {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color:black;
+    color: #fff;
+    border: none;
+    margin-top: 75px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  input[type="submit"]:hover {
+    background-color:darkgrey;
+  }
+  
+  /* Style the video box */
+  #screen {
+    display: block;
+    margin: 0 auto;
+    max-height: 70%;
+    width: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  }
+
+  p{
+    padding-top: 96px;
+    margin-right: 55px;
+    font-weight: bold;
+    font-size: 20px;
+  }
